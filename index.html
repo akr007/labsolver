@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Labyrinth</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="maze-controls">
+			<p>
+				<label for="width">Width(n):</label>
+				<input id="width" type="number" name="width" value="40" min="3" max="200">
+			</p>
+
+			<p>
+				<label for="height">Height(m):</label>
+				<input id="height" type="number" name="height" value="40" min="3" max="200">
+			</p>
+			
+			<div id="maze-gen">
+				<button id="maze-create" onclick="createMaze();">Generate</button>
+				<button id="maze-solve" onclick="solveMaze();">Solve</button>
+			</div>
+		</div>
+		<div>
+			<canvas id="maze"></canvas>
+		</div>
+		<script type="text/javascript">
+			const createMazeButton = document.getElementById('maze-create');
+		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/maze.js"></script>
+		<script type="text/javascript" src="js/solver.js"></script>
+	</body>
+</html>

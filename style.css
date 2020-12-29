@@ -1,0 +1,51 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background: #343838;
+}
+
+p label {
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.maze-controls {
+    padding-bottom: 1em;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#maze-gen {
+    border-top: 1px solid #1d1717;
+    padding-top: 1em;
+}
+
+button {
+    font-family: "Segoe UI",sans-serif;
+    padding:5px 1em;
+    margin-right: .5em;
+    font-size: .9em;
+    background:#b5d4e986;
+    color: #fff;
+    border:0 none;
+    cursor:pointer;
+}
+
+button:hover {
+    background:#0055ff;
+}
+
